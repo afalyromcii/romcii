@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elohim Communication — Studio Photo & Vidéo</title>
+  <meta name="description" content="Elohim Communication : studio de photo & vidéo — reportages, interviews, cérémonies religieuses, mariages, baptêmes." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0f1115"/>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">
+        <div class="logo">EC</div>
+        <span>Elohim Communication</span>
+      </a>
+      <div class="menu" id="menu">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#a-propos">À propos</a>
+        <a href="#contact" class="cta">Devis / Contact</a>
+      </div>
+      <div class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="container hero-inner">
+      <div>
+        <h1 class="headline">Studio photo & vidéo pour vos moments inoubliables</h1>
+        <p class="sub">Elohim Communication capture vos histoires avec élégance : <strong>reportages</strong>, <strong>interviews</strong>, <strong>cérémonies religieuses</strong>, <strong>mariages</strong> et <strong>baptêmes</strong>.</p>
+        <div class="badges">
+          <span class="badge">Qualité 4K</span>
+          <span class="badge">Équipe réactive</span>
+          <span class="badge">Retouches pro</span>
+          <span class="badge">Livraison rapide</span>
+        </div>
+        <p style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+          <a href="#portfolio" class="btn">Voir le portfolio</a>
+          <a href="#contact" class="btn" style="background:linear-gradient(135deg,var(--brand-2),var(--acc))">Demander un devis</a>
+        </p>
+      </div>
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1600&auto=format&fit=crop" alt="Matériel photo et vidéo professionnel" />
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <h2>Nos services</h2>
+      <p class="lead">Des prestations sur mesure pour particuliers, entreprises et organisations.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Reportages</h3>
+          <p>Couverture d'événements, conférences, lancements de produits et vie d'entreprise.</p>
+          <span class="chip">Photo</span><span class="chip">Vidéo</span><span class="chip">Aftermovie</span>
+        </div>
+        <div class="card">
+          <h3>Interviews</h3>
+          <p>Interviews cadrées, son propre, multi-caméras et sous-titrage si besoin.</p>
+          <span class="chip">2 caméras</span><span class="chip">Micro cravate</span><span class="chip">Éclairage soft</span>
+        </div>
+        <div class="card">
+          <h3>Cérémonies religieuses</h3>
+          <p>Captation discrète et respectueuse: cultes, confirmations, ordinations, etc.</p>
+          <span class="chip">Streaming</span><span class="chip">Montage</span>
+        </div>
+        <div class="card">
+          <h3>Mariages</h3>
+          <p>Des préparatifs à l'ouverture du bal — photo & film de mariage émotionnel.</p>
+          <span class="chip">Album</span><span class="chip">Teaser</span><span class="chip">Drone*</span>
+        </div>
+        <div class="card">
+          <h3>Baptêmes</h3>
+          <p>Photos de famille, portraits, moments forts et montage souvenir.</p>
+          <span class="chip">Galerie privée</span><span class="chip">Tirages</span>
+        </div>
+        <div class="card">
+          <h3>Post‑production</h3>
+          <p>Tri, étalonnage, retouches, habillages, motion design léger et livraison sécurisée.</p>
+          <span class="chip">Retouche</span><span class="chip">Étalonnage</span><span class="chip">Sound design</span>
+        </div>
+      </div>
+      <p style="color:#7f8aa1;margin-top:10px;font-size:12px">* Utilisation du drone selon autorisations locales et météo.</p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p class="lead">Sélection de projets. Filtrez par type pour parcourir nos réalisations.</p>
+
+      <div class="filters" id="filters">
+        <button data-filter="all" class="active">Tout</button>
+        <button data-filter="reportage">Reportage</button>
+        <button data-filter="interview">Interview</button>
+        <button data-filter="ceremonie">Cérémonie</button>
+        <button data-filter="mariage">Mariage</button>
+        <button data-filter="bapteme">Baptême</button>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <div class="item" data-cat="reportage"><img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?q=80&w=1200&auto=format&fit=crop" alt="Reportage en entreprise"><span class="tag">Reportage</span></div>
+        <div class="item" data-cat="interview"><img src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?q=80&w=1200&auto=format&fit=crop" alt="Interview plateau"><span class="tag">Interview</span></div>
+        <div class="item" data-cat="ceremonie"><img src="https://images.unsplash.com/photo-1543339308-43f28b923522?q=80&w=1200&auto=format&fit=crop" alt="Cérémonie religieuse"><span class="tag">Cérémonie</span></div>
+        <div class="item" data-cat="mariage"><img src="https://images.unsplash.com/photo-1485875437342-9b39470b3d95?q=80&w=1200&auto=format&fit=crop" alt="Mariage"><span class="tag">Mariage</span></div>
+        <div class="item" data-cat="bapteme"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1200&auto=format&fit=crop" alt="Baptême"><span class="tag">Baptême</span></div>
+        <div class="item" data-cat="reportage"><img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=1200&auto=format&fit=crop" alt="Événement"><span class="tag">Reportage</span></div>
+        <div class="item" data-cat="interview"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop" alt="Interview studio"><span class="tag">Interview</span></div>
+        <div class="item" data-cat="mariage"><img src="https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?q=80&w=1200&auto=format&fit=crop" alt="Couple"><span class="tag">Mariage</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section id="tarifs">
+    <div class="container">
+      <h2>Tarifs indicatifs</h2>
+      <p class="lead">Chaque projet est unique. Voici des bases à ajuster selon vos besoins.</p>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Essentiel</h3>
+          <div class="price">à partir de 150&nbsp;000&nbsp;FCFA</div>
+          <ul class="features">
+            <li>1h de prise de vue</li>
+            <li>20 photos retouchées</li>
+            <li>Livraison 72h</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Événement</h3>
+          <div class="price">à partir de 350&nbsp;000&nbsp;FCFA</div>
+          <ul class="features">
+            <li>1/2 journée de couverture</li>
+            <li>Galerie en ligne privée</li>
+            <li>Teaser vidéo 60s</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Premium</h3>
+          <div class="price">sur devis</div>
+          <ul class="features">
+            <li>Journée complète</li>
+            <li>Album & tirages</li>
+            <li>Drone & multi-cam</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:10px;color:#8f9ab0">Les tarifs incluent retouches de base et livraison numérique. Déplacements hors ville en supplément.</p>
+    </div>
+  </section>
+
+  <!-- A PROPOS -->
+  <section id="a-propos">
+    <div class="container">
+      <h2>À propos d'Elohim Communication</h2>
+      <p class="lead">Nous sommes un studio dédié à la création d'images fortes au service de vos messages.</p>
+      <div class="about">
+        <div>
+          <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1600&auto=format&fit=crop" alt="Studio Elohim Communication" />
+        </div>
+        <div>
+          <p>Depuis nos débuts, nous accompagnons associations, entreprises et familles pour immortaliser l'essentiel : émotions, gestes, paroles et atmosphères. Notre approche allie discrétion, bienveillance et exigence technique.</p>
+          <ul class="features" style="margin-top:12px">
+            <li>Matériel pro : optiques lumineuses, boîtiers 4K, micros HF</li>
+            <li>Flux de travail sécurisé & sauvegardes</li>
+            <li>Charte qualité & délais tenus</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact & devis</h2>
+      <p class="lead">Parlez-nous de votre projet. Réponse rapide !</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <form id="contactForm">
+            <input type="text" name="name" placeholder="Votre nom*" required>
+            <input type="email" name="email" placeholder="Votre email*" required>
+            <input type="tel" name="phone" placeholder="Téléphone">
+            <select name="service">
+              <option value="">Type de service</option>
+              <option>Reportage</option>
+              <option>Interview</option>
+              <option>Cérémonie religieuse</option>
+              <option>Mariage</option>
+              <option>Baptême</option>
+              <option>Autre</option>
+            </select>
+            <textarea name="message" placeholder="Décrivez votre besoin…"></textarea>
+            <button class="btn" type="submit">Envoyer la demande</button>
+            <p id="formMsg" style="margin:8px 0 0;color:#9fb0c9"></p>
+          </form>
+        </div>
+        <div class="contact-card">
+          <h3>Coordonnées</h3>
+          <p><strong>Téléphone :</strong> <a id="phoneLink" href="#">+225 00 00 00 000</a></p>
+          <p><strong>Email :</strong> <a id="mailLink" href="#">contact@elohim-communication.com</a></p>
+          <p><strong>WhatsApp :</strong> <a id="waLink" href="#">Écrire sur WhatsApp</a></p>
+          <p><strong>Adresse :</strong> Abidjan (exemple) — à remplacer</p>
+          <p style="color:#91a0b9">Remplacez ces informations dans le code (section JS : <em>CONFIG</em>).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div>© <span id="year"></span> Elohim Communication — Tous droits réservés.</div>
+      <div style="display:flex;gap:14px">
+        <a href="#a-propos">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog">
+    <button class="close" id="lbClose">Fermer ×</button>
+    <img id="lbImg" alt="Agrandissement"/>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
